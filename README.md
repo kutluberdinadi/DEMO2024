@@ -9,9 +9,3 @@
 |      | ens224 | 192.168.0.165   |/30    | 192.168.0.166  |
 | HQ-SRV | ens192  | 192.168.0.2  | /25 | 192.168.0.1 |
 | BR-SRV | ens192  | 192.168.0.130 | /27 | 192.168.0.129 |
-
-<p align="center">Чили b00bies<p/>  
-  
-<p align="center">
-  <img align="center" src="https://github.com/kutluberdinadi/DEMO2024/assets/148868105/819e5eca-bb45-4c13-854e-409ecbd7029f"/>
-<p/>
