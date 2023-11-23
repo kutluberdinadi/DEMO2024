@@ -42,9 +42,21 @@ nano /etc/network/interfaces
 ```
 #### Назначаем IP адреса в соотвествии с таблицей.
 ```
+auto ens192
+iface ens192 inet static
+address 10.12.25.10
+netmask 255.255.255.0
+gateway 10.12.25.254
 
+auto ens224
+iface ens224 inet static
+address 192.168.0.1
+netmask 255.255.255.224
 
-
+auto ens256
+iface ens256 inet static
+address 192.168.0.35
+netmask 255.255.255.224
 ```
 #### Сохраняем комбинацией клавиш.
 ```
