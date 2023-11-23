@@ -42,6 +42,25 @@ nano /etc/network/interfaces
 ```
 #### Назначаем IP адреса в соотвествии с таблицей.
 ```
+ISP
+allow-hotplug ens192
+iface ens192 inet dhcp
+allow-hotplug ens224
+iface ens224 inet static
+address 192.168.0.166
+netmask 255.255.255.252
+allow-hotplug ens256
+iface ens224 inet static
+address 192.168.0.162
+netmask 255.255.255.252
+HQ-R
+allow-hotplug ens224
+iface ens224 inet static
+address 192.168.0.166
+netmask 255.255.255.252
+gateway 192.168.0.162
+
+
 
 ```
 #### Сохраняем комбинацией клавиш.
