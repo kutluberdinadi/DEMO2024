@@ -86,3 +86,54 @@ systemctl restar networking
 #### Установка пакета frr.
 ```
 apt-get install frr   
+```
+### После установки frr проверил его состояние
+```
+systemctl status frr
+```
+![image](https://github.com/kutluberdinadi/DEMO2024/assets/148868105/445538e8-f1e6-417d-a798-5c0118ba02ba)
+
+### Зашла в файл
+```
+nano /etc/frr/daemons
+```
+### Изменилa значение
+```
+ospfd=yes
+```
+### Перезагрузила службу frr
+```
+systemctl restart frr
+```
+### Зашла в настройку маршрутизации на ISP
+```
+vtysh
+```
+### Просмотрела IP адреса и их состяние
+```
+show interface brief
+```
+### Зашла в конфигурацию терминала
+```
+conf t
+```
+### Запустила процесс
+```
+router ospf
+```
+### Добавила интерфейсы
+```
+network 192.168.0.162/30 area 0
+network 192.198.0.166/30 area 0
+```
+### Просмотрела соседей
+```
+do show ip ospf neighbor
+```
+![image](https://github.com/kutluberdinadi/DEMO2024/assets/148868105/99f2347e-8a4b-471f-a2f0-dc8fb493b614)
+
+### Сохранила конфигурацию
+```
+copy running-config startup-config
+```
+### Проделала тоже самое на остальных машинах
