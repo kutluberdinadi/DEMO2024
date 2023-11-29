@@ -87,7 +87,7 @@ systemctl restar networking
 ```
 apt-get install frr   
 ```
-### После установки frr проверил его состояние
+### После установки frr проверилa его состояние
 ```
 systemctl status frr
 ```
